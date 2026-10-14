@@ -1,8 +1,9 @@
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace UnitConversionApi.Models;
 
 public sealed record ConversionRequest(
-    double Value,
-    [property: Required] string FromUnit,
-    [property: Required] string ToUnit);
+    [property: JsonRequired] double Value,
+    [param: Required] string FromUnit,
+    [param: Required] string ToUnit);

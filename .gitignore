@@ -1,6 +1,9 @@
 bin/
 obj/
 validation-output/
+TestResults/
+coverage/
+*.trx
 .vs/
 .idea/
 *.user

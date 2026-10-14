@@ -1,0 +1,8 @@
+bin/
+obj/
+validation-output/
+.vs/
+.idea/
+*.user
+*.suo
+*.log
